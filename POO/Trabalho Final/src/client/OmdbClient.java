@@ -68,7 +68,7 @@ public class OmdbClient {
 
     public String searchResult(String movieTitle) {
         movieTitle = movieTitle.replaceAll(" +", "+");
-        String requestUrl = SEARCH_URL.replaceAll("TITLE", movieTitle).replaceAll("APIKEY", "61b2900b");
+        String requestUrl = SEARCH_URL.replaceAll("TITLE", movieTitle).replaceAll("APIKEY", "");
 
         return sendGetRequest(requestUrl);
     }
